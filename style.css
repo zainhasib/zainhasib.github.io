@@ -627,7 +627,7 @@
 
 @media only screen and (min-width: 480px) and (max-width:767px) {
     .header {
-        height: 11vh;
+        height: 9vh;
         transition-duration: 1s;
     }
     .header-open {
