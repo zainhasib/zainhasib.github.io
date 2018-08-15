@@ -92,6 +92,9 @@
     align-items: center;
     position: absolute;
 }
+.arrow-left {
+    box-shadow: 3px 3px #000;
+}
 .carousel-arrow {
     color: #fff;
     font-size: 3em;
