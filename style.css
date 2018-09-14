@@ -637,7 +637,7 @@
         transition-duration: 1s;
     }
     .header-open {
-        height: 55vh;
+        height: 6em;
         transition-duration: 1s;
     }
     .header-info {
