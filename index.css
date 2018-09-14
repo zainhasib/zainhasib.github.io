@@ -1,0 +1,210 @@
+* {
+    padding: 0px;
+    margin: 0px;
+}
+header {
+    height: 60px;
+    background: #30122d;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    transition: all 0.3s ease-in-out;
+    z-index: 100;
+    top: 0px;
+}
+.header-shrink {
+    height: 30px;
+}
+.header-shrink-back {
+    background: #220d20;
+}
+.header-toggle {
+    display: none;
+}
+.header-brand {
+    padding: 0px 10px;
+    color: #FFAF00;
+    font-weight: 500;
+    font-size: 1.1em;
+    font-family: 'Ropa Sans', sans-serif;
+}
+.header-list {
+    height: inherit;
+}
+.header-list ul {
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+    align-items: center;
+    justify-content: center;
+}
+.header-list ul li {
+    height: 100%;
+    padding: 0px 8px;
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+    align-items: center;
+    justify-content: center;
+}
+.header-list ul li a {
+    font-size: 0.8em;
+    font-family: 'Montserrat';
+    text-decoration: none;
+    color: #FFAF00;
+}
+.selected {
+    background: #870734;
+}
+.section-one {
+    height: 100vh;
+    background: url('./679478.jpg');
+    background-size: cover;
+    padding-top: 30px;
+    margin: 10px 0px 0px 0px ;
+}
+.section-title {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+    align-items: center;
+    justify-content: center;
+}
+.section-title img {
+    margin-top: 60px;
+    height: 120px;
+}
+.section-two {
+    background: #2d112a;
+    padding: 35px 0px;
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+    justify-content: center;
+}
+.section-two .block-one {
+    width: 28em;
+    height: 2.8em;
+    background: #FFAF00;
+    clip-path: polygon(0 0, 100% 0%, 95% 50%, 100% 100%, 0% 100%, 5% 50%);
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Poiret One', cursive;
+    font-weight: 900;
+    letter-spacing: 6px;
+    font-size: 1.5em;
+}
+.section-two-body .block-two {
+    height: 100px;
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 2em;
+    color: #FFAF00;
+    font-family: 'Courier New', Courier, monospace;
+}
+.section-two-body .block-three {
+    width: 100%;
+    height: 1.8em;
+    background: #973700;
+    clip-path: polygon(0 0, 100% 0%, 95% 50%, 100% 100%, 0% 100%, 5% 50%);
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Poiret One', cursive;
+    font-weight: 900;
+    letter-spacing: 6px;
+    font-size: 1.2em;
+} 
+.section-two-body .block-two .steam:hover {
+    color: #fff;
+}
+.section-two-body .block-two .steam {
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+    align-items: center;
+    margin: 10px 2px;
+    transition-duration: 0.3s;
+}
+.section-two-body .block-two div .title {
+    padding: 0px 14px;
+    height: 30px;
+    font-size: 0.6em;
+    line-height: 30px;
+    font-weight: 500;
+    background: #FFAF00;
+    clip-path: polygon(0 0, 100% 0%, 98% 50%, 100% 100%, 0% 100%, 2% 50%);
+    color: #000;
+}
+.section-three {
+    width: 100%;
+    background: #2d112a;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding: 50px 0px;
+}
+@media only screen and (max-width: 600px) {
+    header {
+        height: inherit; 
+        flex-direction: column;
+        background-size: cover;
+    }
+    .header-brand {
+        padding: 1em 0px;
+    }
+    .header-list ul{
+        display: none;
+        height: 0px;
+        flex-direction: column;
+        transition: all 0.3s ease-in-out;
+    }
+    .header-list ul li {
+        padding: 0.5em 0px;
+        width: 100%;
+    }
+    .header-toggle {
+        display: inline-block;
+        position: fixed;
+        top: 12px;
+        right: 12px;
+        font-size: 1.5em;
+        color: #FFAF00;
+        z-index: 1000;
+    }
+    .section-two-body {
+        width: 90%;
+    }
+    .section-two-body .block-one {
+        width: 100%;
+        font-size: 0.7em;
+    }
+    .section-two-body .block-two {
+        width: 100%;
+        font-size: 1.5em;
+        flex-direction: column;
+        height: max-content;
+    }
+    .section-two-body .block-two .steam {
+        padding: 0px 4px;
+    }
+    .section-two-body .block-three {
+        width: 100%;
+        font-size: 0.5em;
+        height: 30px;
+        font-weight: bold;
+        text-align: center;
+    }
+} 
