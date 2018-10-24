@@ -2,4 +2,4 @@
 
 A Coupled of Templates : 
 
-1) (zainhasib.github.io)
+1) [S-MALL](zainhasib.github.io)
